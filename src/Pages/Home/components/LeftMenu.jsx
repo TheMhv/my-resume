@@ -15,6 +15,7 @@ class LeftMenu extends React.Component {
     return (
       <div className="px-3 pt-3 pb-5">
         <img
+          src="/assets/img/me.jpeg"
           className="rounded-full bg-gray-300"
           height="250px"
           width="250px"
