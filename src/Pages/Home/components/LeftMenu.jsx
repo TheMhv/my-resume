@@ -15,7 +15,7 @@ import Flag from "react-world-flags";
 class LeftMenu extends React.Component {
   render() {
     return (
-      <div className="col-span-4 px-3 pt-3 pb-5">
+      <>
         <img
           src="/assets/img/me.jpeg"
           className="rounded-full bg-gray-300"
@@ -110,7 +110,7 @@ class LeftMenu extends React.Component {
             </ul>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

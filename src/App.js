@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 
 import "./App.css";
@@ -7,11 +6,7 @@ import "./App.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  );
+  return <Home />;
 }
 
 export default App;
