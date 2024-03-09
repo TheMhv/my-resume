@@ -3,12 +3,14 @@ import {
   LuGithub,
   LuGlobe,
   LuLinkedin,
+  LuMail,
   LuMapPin,
   LuPhone,
-  LuTwitter,
+  // LuTwitter,
   LuUser,
 } from "react-icons/lu";
-import { TbBrandDiscord } from "react-icons/tb";
+import { TbBrandDiscord, TbBrandWhatsapp } from "react-icons/tb";
+import Flag from "react-world-flags";
 
 class LeftMenu extends React.Component {
   render() {
@@ -28,21 +30,43 @@ class LeftMenu extends React.Component {
           <div className="flex items-center">
             <LuUser className="mr-1" />
             <span>Name:</span>
-            <span className="font-semibold ml-2">Fulano Ciclano</span>
+            <span className="font-semibold ml-2">Luiz F. G. Medina</span>
+          </div>
+
+          <div className="flex items-center">
+            <LuMail className="mr-1" />
+            <span>Email:</span>
+            <a
+              className="font-semibold hover:underline ml-1"
+              href="mailto:mhv.geral@gmail.com"
+            >
+              mhv.geral@gmail.com
+            </a>
           </div>
 
           <div className="flex items-center">
             <LuPhone className="mr-1" />
             <span>Phone:</span>
-            <span className="font-semibold hover:underline ml-1">
-              +55 (31) 90000-0000
-            </span>
+            <a
+              className="font-semibold hover:underline ml-1"
+              href="tel:+5531995933036"
+            >
+              +55 (31) 99593-3036
+            </a>
           </div>
 
           <div className="flex items-center">
             <LuMapPin className="mr-1" />
-            <span>Address:</span>
-            <span className="font-semibold ml-2">Rua dos Bobos</span>
+            <span>Country:</span>
+            <span className="flex items-center font-semibold ml-1">
+              Brazil
+              <Flag
+                code="BR"
+                className="rounded ml-2"
+                height="25px"
+                width="25px"
+              />
+            </span>
           </div>
 
           <div>
@@ -50,19 +74,39 @@ class LeftMenu extends React.Component {
               <LuGlobe className="mr-1" />
               Social Medias:
             </span>
-            <ul className="pl-10">
-              <div className="flex items-center italic py-0 hover:underline hover:font-semibold">
+
+            <ul className="pl-7 space-y-1">
+              <a
+                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                href="https://github.com/TheMhv"
+              >
                 <LuGithub className="mr-1" /> Github
-              </div>
-              <div className="flex items-center italic py-0 hover:underline hover:font-semibold">
+              </a>
+
+              <a
+                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                href="https://www.linkedin.com/in/luizmedinaa/"
+              >
                 <LuLinkedin className="mr-1" /> LinkedIn
-              </div>
-              <div className="flex items-center italic py-0 hover:underline hover:font-semibold">
+              </a>
+
+              {/* <div className="flex items-center italic py-0 hover:underline hover:font-semibold">
                 <LuTwitter className="mr-1" /> Twitter
-              </div>
-              <div className="flex items-center italic py-0 hover:underline hover:font-semibold">
+              </div> */}
+
+              <a
+                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                href="https://discordapp.com/users/230145118814863362"
+              >
                 <TbBrandDiscord className="mr-1" /> Discord
-              </div>
+              </a>
+
+              <a
+                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                href="https://api.whatsapp.com/send?phone=553195933036"
+              >
+                <TbBrandWhatsapp className="mr-1" /> WhatsApp
+              </a>
             </ul>
           </div>
         </div>
