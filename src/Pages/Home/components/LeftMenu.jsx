@@ -13,7 +13,7 @@ import { TbBrandDiscord } from "react-icons/tb";
 class LeftMenu extends React.Component {
   render() {
     return (
-      <div className="px-3 pt-3 pb-5">
+      <div className="col-span-4 px-3 pt-3 pb-5">
         <img
           src="/assets/img/me.jpeg"
           className="rounded-full bg-gray-300"

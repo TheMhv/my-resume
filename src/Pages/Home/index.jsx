@@ -7,7 +7,7 @@ class Home extends React.Component {
   render() {
     return (
       <Template>
-        <div className="flex divide-x divide-x-3 divide-black bg-white rounded-lg shadow">
+        <div className="grid grid-cols-12 divide-x divide-x-3 divide-gray-400 bg-white rounded-lg shadow">
           <LeftMenu />
 
           <Content />
