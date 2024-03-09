@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 class Content extends React.Component {
   render() {
     return (
-      <div className="space-y-3 mt-5 mb-56 px-4">
+      <div className="space-y-3 mt-5 mb-24 px-4">
         <Routes>
           <Route
             path="/about-me"
