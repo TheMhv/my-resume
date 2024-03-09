@@ -265,8 +265,8 @@ class Content extends React.Component {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold border-b-2">
-                    Complementary courses
+                  <h3 className="text-lg font-semibold border-b-2">
+                    Some complementary courses
                   </h3>
 
                   <ul className="list-disc pl-10 py-2">
@@ -280,6 +280,20 @@ class Content extends React.Component {
                       Cedaspy Professional Informatics{" "}
                       <span className="text-sm font-semibold">(Complete)</span>
                     </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold border-b-2">
+                    Languages
+                  </h3>
+
+                  <ul className="list-disc pl-10 py-2">
+                    <li>Intermediate and technical English</li>
+
+                    <li>Basic Spanish, but I can try to communicate</li>
+
+                    <li>Naturally fluent in Portuguese</li>
                   </ul>
                 </div>
               </div>
