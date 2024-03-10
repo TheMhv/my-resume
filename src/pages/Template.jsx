@@ -8,20 +8,25 @@ import MenuFooter from "../components/MenuFooter";
 class Template extends React.Component {
   render() {
     return (
-      <main id="content" className="bg-black">
+      <main
+        id="content"
+        className="bg-[url(../public/assets/img/background.gif)] bg-no-repeat bg-cover"
+      >
         <div className="container mx-auto">
-          <div className="flex items-center justify-center h-screen">
-            <div className="grid grid-cols-12 divide-x divide-x-3 divide-gray-400 bg-white rounded-lg shadow">
-              <div className="col-span-4 px-3 pt-3 pb-5">
-                <LeftMenu />
-              </div>
+          <div className="flex items-center h-screen">
+            <div className="bg-gradient-to-b from-[#000000] to-[#009743] rounded-lg p-1">
+              <div className="grid grid-cols-12 bg-background text-text rounded-lg">
+                <div className="col-span-4 px-3 pt-3 pb-5">
+                  <LeftMenu />
+                </div>
 
-              <div className="col-span-8 relative">
-                <MenuTabs />
+                <div className="col-span-8 relative">
+                  <MenuTabs />
 
-                <Content />
+                  <Content />
 
-                <MenuFooter />
+                  <MenuFooter />
+                </div>
               </div>
             </div>
           </div>

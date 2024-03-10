@@ -11,7 +11,7 @@ function Tab({ to, icon, text }) {
     <Link
       to={to}
       className={classNames([
-        "flex items-center justify-center bg-white border-b-2 rounded-t-lg py-3 px-5 w-full",
+        "flex items-center justify-center border-b-2 rounded-t-lg py-3 px-5 w-full",
         location.pathname === `/${to}`
           ? "font-bold border-primary text-primary"
           : "border-transparent hover:font-bold hover:border-primary hover:text-primary",

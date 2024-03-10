@@ -82,32 +82,32 @@ class LeftMenu extends React.Component {
                 className="flex items-center hover:underline hover:font-semibold"
                 href="https://github.com/TheMhv"
               >
-                <LuGithub className="mr-1 text-black" /> Github
+                <LuGithub className="mr-1 text-text" /> Github
               </a>
 
               <a
                 className="flex items-center hover:underline hover:font-semibold"
                 href="https://www.linkedin.com/in/luizmedinaa/"
               >
-                <LuLinkedin className="mr-1 text-black" /> LinkedIn
+                <LuLinkedin className="mr-1 text-text" /> LinkedIn
               </a>
 
               {/* <div className="flex items-center hover:underline hover:font-semibold">
-                <LuTwitter className="mr-1 text-black" /> Twitter
+                <LuTwitter className="mr-1 text-text" /> Twitter
               </div> */}
 
               <a
                 className="flex items-center hover:underline hover:font-semibold"
                 href="https://discordapp.com/users/230145118814863362"
               >
-                <TbBrandDiscord className="mr-1 text-black" /> Discord
+                <TbBrandDiscord className="mr-1 text-text" /> Discord
               </a>
 
               <a
                 className="flex items-center hover:underline hover:font-semibold"
                 href="https://api.whatsapp.com/send?phone=553195933036"
               >
-                <TbBrandWhatsapp className="mr-1 text-black" /> WhatsApp
+                <TbBrandWhatsapp className="mr-1 text-text" /> WhatsApp
               </a>
             </ul>
           </div>

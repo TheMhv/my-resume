@@ -14,7 +14,7 @@ class Configurator extends React.Component {
     return (
       <>
         <button
-          className="bg-primary text-white border-2 border-primary rounded-lg hover:bg-white hover:text-black hover:border-primary p-2"
+          className="bg-primary text-white border-2 border-primary rounded-lg hover:bg-transparent hover:text-text hover:border-primary p-2"
           onClick={this.showModal}
         >
           <LuCog />
@@ -38,7 +38,7 @@ class Configurator extends React.Component {
                 </button>
               </div>
 
-              <div className="p-8">
+              <div className="text-black p-8">
                 <h2 className="font-semibold text-4xl text-center mb-8">
                   Template Configurator
                 </h2>
