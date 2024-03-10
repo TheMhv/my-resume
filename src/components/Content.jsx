@@ -9,7 +9,7 @@ import Education from "../pages/education";
 class Content extends React.Component {
   render() {
     return (
-      <div className="space-y-3 mt-5 mb-24 px-4">
+      <div className="space-y-8 mt-5 mb-24 px-4">
         <Routes>
           <Route path="/about-me" element={<AboutMe />} />
 

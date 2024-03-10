@@ -16,13 +16,15 @@ class LeftMenu extends React.Component {
   render() {
     return (
       <>
-        <img
-          src="https://avatars.githubusercontent.com/u/25031483"
-          className="rounded-full bg-secondary"
-          height="250px"
-          width="250px"
-          alt=""
-        />
+        <div className="flex justify-center items-center">
+          <img
+            src="https://avatars.githubusercontent.com/u/25031483"
+            className="rounded-full bg-secondary"
+            height="250px"
+            width="250px"
+            alt=""
+          />
+        </div>
 
         <hr className="border-1 border-secondary my-5" />
 

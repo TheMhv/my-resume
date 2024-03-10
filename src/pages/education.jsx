@@ -4,7 +4,7 @@ class Education extends React.Component {
   render() {
     return (
       <div className="space-y-2">
-        <h2 className="text-2xl font-semibold border-b-2 border-gray-300 pb-1">
+        <h2 className="text-2xl font-semibold border-b-2 border-secondary pb-1">
           Education
         </h2>
 
@@ -26,9 +26,7 @@ class Education extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold border-b-2">
-            Some complementary courses
-          </h3>
+          <h3 className="text-lg font-semibold">Some complementary courses</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>
@@ -45,7 +43,7 @@ class Education extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold border-b-2">Languages</h3>
+          <h3 className="text-lg font-semibold">Languages</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>Intermediate and technical English</li>

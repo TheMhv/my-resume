@@ -5,7 +5,7 @@ class AboutMe extends React.Component {
     return (
       <>
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold border-b-2 border-gray-300 pb-1">
+          <h2 className="text-2xl font-semibold border-b-2 border-secondary pb-1">
             Introduction
           </h2>
           <p className="indent-5">
@@ -19,7 +19,7 @@ class AboutMe extends React.Component {
         </div>
 
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold border-b-2 border-gray-300 pb-1">
+          <h2 className="text-2xl font-semibold border-b-2 border-secondary pb-1">
             Professional Objective
           </h2>
           <p className="indent-5">

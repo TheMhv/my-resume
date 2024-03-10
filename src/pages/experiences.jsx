@@ -4,12 +4,12 @@ class Experiences extends React.Component {
   render() {
     return (
       <div className="space-y-2">
-        <h2 className="text-2xl font-semibold border-b-2 border-gray-300 pb-2">
+        <h2 className="text-2xl font-semibold border-b-2 border-secondary pb-2">
           Professional Experiences
         </h2>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">
+          <h3 className="text-xl font-semibold">
             Lead Force Ltda. - Fullstacks Developer
             <span className="text-sm ml-2">{"(Fev/2022 -> now)"}</span>
           </h3>
@@ -35,7 +35,7 @@ class Experiences extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">
+          <h3 className="text-xl font-semibold">
             MOVA Person-to-Peer Loan Company S.A. - PHP Developer
             <span className="text-sm ml-2">{"(Nov/2021 -> Fev/2022)"}</span>
           </h3>
@@ -56,7 +56,7 @@ class Experiences extends React.Component {
         </div>
 
         <div className="pt-2">
-          <h3 className="text-xl font-semibold border-b-2">
+          <h3 className="text-xl font-semibold">
             Freelance Web Developer
             <span className="text-sm ml-2">{"(Dez/2020 -> Nov/2021)"}</span>
           </h3>

@@ -4,12 +4,12 @@ class Skills extends React.Component {
   render() {
     return (
       <div className="space-y-2">
-        <h2 className="text-2xl font-semibold border-b-2 border-gray-300 pb-1">
+        <h2 className="text-2xl font-semibold border-b-2 border-secondary pb-1">
           Skills
         </h2>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">Web</h3>
+          <h3 className="text-xl font-semibold">Web</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>Proficiency in HTML, CSS and JavaScript.</li>
@@ -38,7 +38,7 @@ class Skills extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">Database</h3>
+          <h3 className="text-xl font-semibold">Database</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>Database Administration</li>
@@ -52,7 +52,7 @@ class Skills extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">Networking</h3>
+          <h3 className="text-xl font-semibold">Networking</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>Network performance monitoring and optimization.</li>
@@ -70,7 +70,7 @@ class Skills extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">Hardware</h3>
+          <h3 className="text-xl font-semibold">Hardware</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>Assembly, maintenance and diagnosis of computer hardware</li>
@@ -84,9 +84,7 @@ class Skills extends React.Component {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold border-b-2">
-            Information security
-          </h3>
+          <h3 className="text-xl font-semibold">Information security</h3>
 
           <ul className="list-disc pl-10 py-2">
             <li>Vulnerability analysis and penetration testing</li>

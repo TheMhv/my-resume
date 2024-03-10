@@ -5,7 +5,7 @@ import Configurator from "./Configurator";
 class MenuFooter extends React.Component {
   render() {
     return (
-      <div className="absolute bottom-0 rounded-r-lg rounded-t-none w-full p-3 mt-10">
+      <div className="absolute bottom-0 rounded-r-lg rounded-t-lg w-full p-3 mt-10">
         <div className="flex justify-between items-center">
           <div>
             <span className="text-xs text-nowrap">
