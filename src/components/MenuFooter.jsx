@@ -1,4 +1,6 @@
 import React from "react";
+import { LuCog } from "react-icons/lu";
+import Settings from "./Settings";
 
 class MenuFooter extends React.Component {
   render() {
@@ -15,6 +17,10 @@ class MenuFooter extends React.Component {
                 @TheMhv
               </a>
             </span>
+          </div>
+
+          <div>
+            <Settings />
           </div>
 
           <div className="flex items-center">
