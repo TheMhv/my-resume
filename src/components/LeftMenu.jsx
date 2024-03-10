@@ -17,27 +17,29 @@ class LeftMenu extends React.Component {
     return (
       <>
         <img
-          src="/assets/img/me.jpeg"
-          className="rounded-full bg-gray-300"
+          src="https://avatars.githubusercontent.com/u/25031483"
+          className="rounded-full bg-secondary"
           height="250px"
           width="250px"
           alt=""
         />
 
-        <hr className="border-1 border-gray-500 my-5" />
+        <hr className="border-1 border-secondary my-5" />
 
         <div className="space-y-3">
           <div className="flex items-center">
             <LuUser className="mr-1" />
             <span>Name:</span>
-            <span className="font-semibold ml-2">Luiz F. G. Medina</span>
+            <span className="font-semibold text-primary ml-2">
+              Luiz F. G. Medina
+            </span>
           </div>
 
           <div className="flex items-center">
             <LuMail className="mr-1" />
             <span>Email:</span>
             <a
-              className="font-semibold hover:underline ml-1"
+              className="font-semibold text-primary ml-1 hover:underline hover:font-bold"
               href="mailto:mhv.geral@gmail.com"
             >
               mhv.geral@gmail.com
@@ -48,7 +50,7 @@ class LeftMenu extends React.Component {
             <LuPhone className="mr-1" />
             <span>Phone:</span>
             <a
-              className="font-semibold hover:underline ml-1"
+              className="font-semibold text-primary ml-1 hover:underline hover:font-bold"
               href="tel:+5531995933036"
             >
               +55 (31) 99593-3036
@@ -58,7 +60,7 @@ class LeftMenu extends React.Component {
           <div className="flex items-center">
             <LuMapPin className="mr-1" />
             <span>Country:</span>
-            <span className="flex items-center font-semibold ml-1">
+            <span className="flex items-center font-semibold text-primary ml-1">
               Brazil
               <Flag
                 code="BR"
@@ -75,37 +77,37 @@ class LeftMenu extends React.Component {
               Social Medias:
             </span>
 
-            <ul className="pl-7 space-y-1">
+            <ul className="list-disc italic text-primary space-y-1 pl-7">
               <a
-                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                className="flex items-center hover:underline hover:font-semibold"
                 href="https://github.com/TheMhv"
               >
-                <LuGithub className="mr-1" /> Github
+                <LuGithub className="mr-1 text-black" /> Github
               </a>
 
               <a
-                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                className="flex items-center hover:underline hover:font-semibold"
                 href="https://www.linkedin.com/in/luizmedinaa/"
               >
-                <LuLinkedin className="mr-1" /> LinkedIn
+                <LuLinkedin className="mr-1 text-black" /> LinkedIn
               </a>
 
-              {/* <div className="flex items-center italic py-0 hover:underline hover:font-semibold">
-                <LuTwitter className="mr-1" /> Twitter
+              {/* <div className="flex items-center hover:underline hover:font-semibold">
+                <LuTwitter className="mr-1 text-black" /> Twitter
               </div> */}
 
               <a
-                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                className="flex items-center hover:underline hover:font-semibold"
                 href="https://discordapp.com/users/230145118814863362"
               >
-                <TbBrandDiscord className="mr-1" /> Discord
+                <TbBrandDiscord className="mr-1 text-black" /> Discord
               </a>
 
               <a
-                className="flex items-center italic py-0 hover:underline hover:font-semibold"
+                className="flex items-center hover:underline hover:font-semibold"
                 href="https://api.whatsapp.com/send?phone=553195933036"
               >
-                <TbBrandWhatsapp className="mr-1" /> WhatsApp
+                <TbBrandWhatsapp className="mr-1 text-black" /> WhatsApp
               </a>
             </ul>
           </div>
