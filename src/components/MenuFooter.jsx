@@ -1,6 +1,6 @@
 import React from "react";
-import { LuCog } from "react-icons/lu";
-import Settings from "./Settings";
+
+import Configurator from "./Configurator";
 
 class MenuFooter extends React.Component {
   render() {
@@ -20,24 +20,7 @@ class MenuFooter extends React.Component {
           </div>
 
           <div>
-            <Settings />
-          </div>
-
-          <div className="flex items-center">
-            <label>Primary color:</label>
-            <input
-              className="rounded ml-2"
-              type="color"
-              defaultValue={getComputedStyle(
-                document.documentElement
-              ).getPropertyValue("--color-primary")}
-              onChange={(e) => {
-                document.documentElement.style.setProperty(
-                  "--color-primary",
-                  e.target.value
-                );
-              }}
-            />
+            <Configurator />
           </div>
         </div>
       </div>
