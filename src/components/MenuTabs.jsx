@@ -1,45 +1,40 @@
 import React from "react";
+
 import { LuBook, LuHourglass, LuLightbulb, LuSchool } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import classNames from "classnames";
 
-class MenuTabs extends React.Component {
-  render() {
-    return (
-      <div className="flex justify-between text-sm font-medium">
-        <Link
-          to="about-me"
-          className="flex items-center justify-center bg-white border-b-2 border-transparent rounded-t-lg py-3 px-5 w-full hover:font-bold hover:border-gray-500 active:text-blue-600 active:border-blue-600"
-        >
-          <LuBook className="mr-1" />
-          About me
-        </Link>
+function Tab({ to, icon, text }) {
+  const location = useLocation();
 
-        <Link
-          to="experiences"
-          className="flex items-center justify-center bg-white border-b-2 border-transparent rounded-t-lg py-3 px-5 w-full hover:font-bold hover:border-gray-500 active:text-blue-600 active:border-blue-600"
-        >
-          <LuHourglass className="mr-1" />
-          Experiences
-        </Link>
+  return (
+    <Link
+      to={to}
+      className={classNames([
+        "flex items-center justify-center bg-white border-b-2 rounded-t-lg py-3 px-5 w-full",
+        location.pathname === `/${to}`
+          ? "font-bold border-primary text-primary"
+          : "border-transparent hover:font-bold hover:border-primary hover:text-primary",
+      ])}
+    >
+      <span className="mr-1">{icon}</span>
+      {text}
+    </Link>
+  );
+}
 
-        <Link
-          to="skills"
-          className="flex items-center justify-center bg-white border-b-2 border-transparent rounded-t-lg py-3 px-5 w-full hover:font-bold hover:border-gray-500 active:text-blue-600 active:border-blue-600"
-        >
-          <LuLightbulb className="mr-1" />
-          Skills
-        </Link>
+function MenuTabs() {
+  return (
+    <div className="flex justify-between text-sm font-medium">
+      <Tab text="About Me" icon={<LuBook />} to="about-me" />
 
-        <Link
-          to="education"
-          className="flex items-center justify-center bg-white border-b-2 border-transparent rounded-t-lg py-3 px-5 w-full hover:font-bold hover:border-gray-500 active:text-blue-600 active:border-blue-600"
-        >
-          <LuSchool className="mr-1" />
-          Education
-        </Link>
-      </div>
-    );
-  }
+      <Tab text="Experiences" icon={<LuHourglass />} to="experiences" />
+
+      <Tab text="Skills" icon={<LuLightbulb />} to="skills" />
+
+      <Tab text="Education" icon={<LuSchool />} to="education" />
+    </div>
+  );
 }
 
 export default MenuTabs;
