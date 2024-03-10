@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import AboutMe from "../pages/about-me";
 import Experiences from "../pages/experiences";
@@ -11,14 +11,15 @@ class Content extends React.Component {
     return (
       <div className="space-y-3 mt-5 mb-24 px-4">
         <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="/about-me" element={<AboutMe />} />
+          <Route exact path="/about-me" element={<AboutMe />} />
 
-          <Route path="/experiences" element={<Experiences />} />
+          <Route exact path="/experiences" element={<Experiences />} />
 
-          <Route path="/skills" element={<Skills />} />
+          <Route exact path="/skills" element={<Skills />} />
 
-          <Route path="/education" element={<Education />} />
+          <Route exact path="/education" element={<Education />} />
+
+          <Route path="*" element={<Navigate replace to="/about-me" />} />
         </Routes>
       </div>
     );
