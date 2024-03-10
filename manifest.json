@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Resume of Luiz F. G. Medina",
+  "name": "My resume created with react and published on github pages",
   "icons": [
     {
       "src": "favicon.ico",
