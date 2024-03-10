@@ -19,7 +19,7 @@ class Content extends React.Component {
 
           <Route exact path="/education" element={<Education />} />
 
-          <Route path="*" element={<Navigate replace to="/about-me" />} />
+          <Route path="*" element={<Navigate to="/about-me" />} />
         </Routes>
       </div>
     );
