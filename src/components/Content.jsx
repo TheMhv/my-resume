@@ -11,15 +11,15 @@ class Content extends React.Component {
     return (
       <div className="space-y-3 mt-5 mb-24 px-4">
         <Routes>
-          <Route exact path="/about-me" element={<AboutMe />} />
+          <Route path="/about-me" element={<AboutMe />} />
 
-          <Route exact path="/experiences" element={<Experiences />} />
+          <Route path="/experiences" element={<Experiences />} />
 
-          <Route exact path="/skills" element={<Skills />} />
+          <Route path="/skills" element={<Skills />} />
 
-          <Route exact path="/education" element={<Education />} />
+          <Route path="/education" element={<Education />} />
 
-          <Route path="*" element={<Navigate to="/about-me" />} />
+          <Route path="*" element={<Navigate replace to="/about-me" />} />
         </Routes>
       </div>
     );
